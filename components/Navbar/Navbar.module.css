@@ -1,0 +1,29 @@
+.mobile {
+  width: 0;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.4s;
+}
+
+/* .open .mobileMenuItems {
+  width: 80%;
+  height: 100%;
+} */
+
+.open.mobile {
+  width: 60vw;
+}
+
+@media (max-width: 500px) {
+  .open.mobile {
+    width: 80vw;
+  }
+}
+
+.navbar {
+  /* color: rgb(206, 206, 206); */
+  /* color: lightgray; */
+  /* color: rgba(192, 190, 190, 0.94); */
+}

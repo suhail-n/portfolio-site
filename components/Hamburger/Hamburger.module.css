@@ -1,0 +1,39 @@
+.hamburger {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.hamburger span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  top: 0;
+  left: 0;
+}
+
+.middle {
+  transform: translateY(8px);
+}
+
+.bottom {
+  transform: translateY(16px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .middle {
+  transform: scale(0);
+}
+
+.open .top {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.open .bottom {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
