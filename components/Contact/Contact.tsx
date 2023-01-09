@@ -4,10 +4,7 @@ const Contact = () => {
             <div className="flex flex-col justify-center min-h-screen max-h-screen p-10 sm:p-0 gap-5">
                 <h1 className="dark:text-textPrimary-dark text-xl"><span className="text-sm text-textSecondary-light dark:text-textSecondary-dark">03. </span>Contact</h1>
                 <h2 className="text-2xl md:text-4xl md:my-5 dark:text-textPrimary-dark">Let's Get In Touch!</h2>
-                <div className="max-w-md">
-                    {/* <p className="sm:text-sm md:text-base text-textPrimary-light dark:text-textPrimary-dark my-2">I'm currently living the dream as a Senior Engineer and I'm not searching for any new opportunities. However, I'm always open for a coffee chat. Feel free to send me a message</p> */}
-                    <p className="sm:text-xl text-lg text-gray-500 dark:text-gray-400 my-2">I'm currently living the dream as a Senior Engineer and I'm not searching for any new opportunities. However, I'm always open for a coffee chat. Feel free to send me a message</p>
-                </div>
+                <h3 className="sm:text-xl text-lg text-gray-500 dark:text-gray-400 my-2 max-w-sm lg:max-w-xl sm:max-w-lg">I'm currently living the dream as a Senior Engineer and I'm not searching for any new opportunities. However, I'm always open for a coffee chat. Feel free to send me a message</h3>
                 <a href="https://www.linkedin.com/in/suhail-nooristani" target="_blank" className="dark:hover:bg-slate-700 hover:bg-red-100 p-4 w-40 h-14 border-[1px] text-center flex justify-center items-center border-textSecondary-light dark:border-textSecondary-dark text-textSecondary-light dark:text-textSecondary-dark mt-5"><p>Lets Chat</p>
                     <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 icon icon-tabler icon-tabler-coffee dark:text-textSecondary-dark" width={24} height={24} viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
