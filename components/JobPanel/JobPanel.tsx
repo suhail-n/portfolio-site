@@ -25,14 +25,13 @@ const JobPanel = ({ jobs }: JobPanelProps) => {
                 {jobs.map((job, i) => {
                     return (
                         <>
-                            {/* <span onClick={_ => onJobClickHandler(i)} className={`border-opacity-20 pr-3 border-r-2 h-6 border-red-300 dark:border-gray-400 dark:border-opacity-10 whitespace-nowrap cursor-pointer hover:text-textSecondary-light hover:dark:text-textSecondary-dark ${i === active ? classes : "dark:text-gray-400 text-gray-500"} sm:hover:translate-y-[-0.25rem] sm:transition-transform`} key={i}>{job.company}</span> */}
-                            <span key={i} onClick={_ => onJobClickHandler(i)} className={`border-opacity-20 h-8 border-red-300 dark:border-gray-400 dark:border-opacity-10 whitespace-nowrap cursor-pointer hover:text-textSecondary-light hover:dark:text-textSecondary-dark ${i === active ? classes : "dark:text-gray-400 text-gray-500"} sm:hover:translate-y-[-0.25rem] sm:transition-transform`} key={i}>{job.company}</span>
-                            <span key={i + jobs.length} className="border-r-2 h-6 border-red-300 dark:border-gray-400 dark:border-opacity-10 border-opacity-20"></span>
+                            <span key={i} onClick={_ => onJobClickHandler(i)} className={`border-opacity-20 h-8 border-red-300 dark:border-gray-400 dark:border-opacity-10 whitespace-nowrap cursor-pointer hover:text-textSecondary-light hover:dark:text-textSecondary-dark ${i === active ? classes : "dark:text-gray-400 text-gray-500"} sm:hover:translate-y-[-0.25rem] sm:transition-transform`}>{job.company}</span>
+                            <span className="border-r-2 h-6 border-red-300 dark:border-gray-400 dark:border-opacity-10 border-opacity-20"></span>
                         </>
                     )
                 })}
             </div>
-            <div className="side-description sm:hidden">
+            <div className="side-description sm:hidden min-h-[400px] max-h-[400px]">
                 {jobs.map((job, i) => {
                     return (
                         <PanelItem active={active == i} key={i} job={job} />
