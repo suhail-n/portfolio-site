@@ -20,7 +20,7 @@ const PanelItem = ({ job, active }: PanelItemProps) => {
             <ul className="flex flex-col gap-3 max-h-96 overflow-y-auto">
                 {description.map((desc, i) => {
                     return (
-                        <li key={i} className="text-[14px] sm:text-base before:content-['↗_'] dark:text-gray-400 text-gray-800 before:text-textSecondary-light dark:before:text-textSecondary-dark">{desc}</li>
+                        <li key={i} className="text-sm sm:text-base before:content-['↗_'] dark:text-gray-400 text-gray-800 before:text-textSecondary-light dark:before:text-textSecondary-dark">{desc}</li>
                     )
                 })}
             </ul>
