@@ -1,7 +1,6 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode, useState } from "react";
 import Head from "next/head";
 import Navbar from '../Navbar/Navbar';
-import { useState } from 'react';
 
 type Props = {
     children: ReactNode;

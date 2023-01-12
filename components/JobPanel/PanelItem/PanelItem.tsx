@@ -12,7 +12,7 @@ const PanelItem = ({ job, active }: PanelItemProps) => {
     const { company, title, startDate, endDate, description } = job;
     if (!active) return <></>;
     return (
-        <div className="flex flex-col gap-3 w-ful overflow-hidden">
+        <div className="flex flex-col gap-3 w-ful overflow-hidden border-t-2 border-opacity-20 dark:border-opacity-10 pt-5 sm:border-t-0 sm:mt-0 sm:pt-0 sm:border-l-2 border-red-300 sm:border-opacity-20 dark:border-gray-400 dark:sm:border-opacity-10 sm:pl-8">
             <div className="title">
                 <h1 className="text-lg">{title} <span className="text-textSecondary-light dark:text-textSecondary-dark">@{company}</span></h1>
                 <h2 className="text-[0.9rem] dark:text-gray-400 text-black">{startDate} - {endDate}</h2>

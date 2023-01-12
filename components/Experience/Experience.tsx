@@ -26,7 +26,7 @@ const Experience = () => {
             ]
         },
         {
-            company: "RBC",
+            company: "RBC COE",
             title: "Senior DevOps Engineer",
             startDate: "March 2019",
             endDate: "March 2020",
@@ -38,7 +38,7 @@ const Experience = () => {
             ]
         },
         {
-            company: "RBC",
+            company: "RBC CS",
             title: "Quality Engineer Analyst",
             startDate: "March 2020",
             endDate: "April 2022",
@@ -52,7 +52,7 @@ const Experience = () => {
             ]
         },
         {
-            company: "RBC",
+            company: "RBC COE",
             title: "Test Automation Developer",
             startDate: "March 2017",
             endDate: "March 2019",
@@ -69,8 +69,8 @@ const Experience = () => {
     return (
         <section id="experience" className="bg-bgPrimary-light dark:bg-bgPrimary-dark h-screen flex flex-col justify-center">
             <div className="p-10 max-w-screen-lg mx-auto">
-                <h1 className="text-textPrimary-light dark:text-textPrimary-dark my-5 uppercase text-xl"><span className="text-sm text-textSecondary-light dark:text-textSecondary-dark">02. </span>My Journey</h1>
-                <div className="flex flex-col sm:flex-row">
+                <h1 className="text-textPrimary-light dark:text-textPrimary-dark my-5 mb-16 uppercase text-xl"><span className="text-sm text-textSecondary-light dark:text-textSecondary-dark">02. </span>My Journey</h1>
+                <div className="flex flex-col sm:flex-row sm:justify-center">
                     <JobPanel jobs={jobs} />
                 </div>
             </div>
